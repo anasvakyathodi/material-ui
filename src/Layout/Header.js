@@ -14,7 +14,7 @@ const useStyle = makeStyles({
 function Header() {
   const classes = useStyle();
   const handleClick = () => {
-    window.location.href = "https://wa.me/9656551078";
+    window.location.href = "https://wa.link/sjz6ar";
   };
 
   return (
