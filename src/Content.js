@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import CoffeeCard from "./CoffeeCard";
-import { Grid } from "@material-ui/core";
+import { Grid, CircularProgress } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "axios";
-import ReactLoading from "react-loading";
 const useStyles = makeStyles({
   root: {
     marginTop: "3rem",
@@ -48,7 +47,7 @@ function Content() {
   ) : (
     <Grid container direction="row" justify="center" alignItems="center">
       <Grid item sm="auto" className={classes.loading}>
-        <ReactLoading type="spin" color="#2292a4" height={40} width={40} />
+        <CircularProgress type="spin" style={{ color: "#2292a4" }} />
       </Grid>
     </Grid>
   );

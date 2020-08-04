@@ -18,7 +18,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" className={classes.appbarStyle}>
+    <AppBar position="fixed" className={classes.appbarStyle}>
       <Toolbar>
         <Typography variant="h6" className={classes.typographyStyles}>
           Anas Vakyathodi
